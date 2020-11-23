@@ -1,33 +1,90 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <link rel="stylesheet" href="./assets/css/styles.css">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&family=Ubuntu:wght@400;700&display=swap"
+        rel="stylesheet">
 </head>
+
 <body>
-    <div id="relogio">
-        <div>
-            <span id="days" class="horario"></span>
-            <span class="nome">Horas</span>
+    <header>
+        <img src="./assets/images/Logo.svg" alt="">
+        <p>últimos dias para realizar sua inscrição</p>
+        <div id="relogio">
+            <div>
+                <span id="days" class="horario"></span>
+                <span class="nome">Dias</span>
+            </div>
+
+            <div>
+                <span id="hours" class="horario"></span>
+                <span class="nome">Horas</span>
+            </div>
+
+            <div>
+                <span id="minutes" class="horario"></span>
+                <span class="nome">Minutos</span>
+            </div>
+
+            <div>
+                <span id="seconds" class="horario"></span>
+                <span class="nome">Segundos</span>
+            </div>
         </div>
-        <span>:</span>
-        <div>
-            <span id="hours" class="horario"></span>
-            <span class="nome">Horas</span>
+    </header>
+
+    <section>
+        <div class="middle">
+            <img src="./assets/images/Fundo.svg" id="fotofundo" alt="">
+            <div class="AnuncioLive">
+                <div class="TextoAnuncioLive"> live exclusiva <br> quinta-feira 26/11/20
+                </div>
+            </div>
+
+            <div class="TextoEsquerda">
+                Como mudar sua carreira? <br><br>
+                Como se planejar financeiramente? <br><br>
+                Como manter sua saúde mental? <br><br><br>
+            </div>
+            <div class="TextoEsquerda2"> Essas são algumas das dúvidas <br>
+                que você tem? Então você não <br>
+                pode ficar de fora dessa live! </div>
+
+            <div class="ImagemCarta"><img src="./assets/images/Rectangle 30.svg" alt=""></div>
+
+            <div class="Formulario">
+
+                <div class="TextoFormulario">preencha o formulário para <br> assistir a live gratuitamente</div>
+
+                <div class="FormFinal">
+                    <form action="" method="POST">
+                        <input type="text" value="nome completo" name="nome"><br>
+                        <input type="email" value="e-mail" name="email"><br>
+                        <button class="botao textobotao">inscrever-se gratuitamente</button>
+                    </form>
+                </div>
+            </div>
         </div>
-        <span>:</span>
-        <div>
-            <span id="minutes" class="horario"></span>
-            <span class="nome">Horas</span>
-        </div>
-        <span>:</span>
-        <div>
-            <span id="seconds" class="horario"></span>
-            <span class="nome">Horas</span>
-        </div>
+    </section>
+
+<section>
+    <div class="convidados">
+    <h3>conheça nossos <br>convidados</h3>
+
+    <div >
+        <img class="img1" src="" alt="">
+        <img class="img2" src="" alt="">
+        <img class="img3" src="" alt="">
     </div>
+
+</div>
+</section>
     <script src="./assets/js/index.js"></script>
 </body>
+
 </html>
