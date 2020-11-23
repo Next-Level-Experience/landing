@@ -1,3 +1,34 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html, body {
+    height: 100%;
+}
+
+header {
+    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #0D62A7;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 6px 0;
+    position: fixed;
+    width: 100%;
+    z-index: 2;
+    top: 0;
+}
+
+header p {
+    color: #EDF1F6;
+    font-family: 'Ubuntu', sans-serif;   
+    font-size: 24px;
+    text-transform: uppercase;
+    margin-right: 40px;
+}
+
+
 #relogio {
     display: flex;
     align-items: center;
@@ -13,7 +44,7 @@
 .horario {
     font-size: 24px;
     font-weight: bold;
-    color: #EBA61F;
+    color: #fff;
     background-color: #0A4A7E;	
     border-radius: 8px;
     padding: 8px;
@@ -34,130 +65,118 @@
     color: #C0C0C0;
 }
 
-header{
-    background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #0D62A7;
+section {
+    min-height: 100%;
+    width: 100%;
+    background: rgba(54, 64, 116, 0.32);
+    padding: 0 150px;
+}
+
+#top {
+    position: relative;
+    background: rgba(12, 18, 50, 0.65);
+    padding-top: 80px;
+    padding-bottom: 80px;
+    margin-top: 75px;
+}
+
+#top::after {
+    background-image: url('../images/Fundo.jpg');
+	background-size: cover;
+	background-repeat: no-repeat;
+	content: '';
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	right: 0;
+	left: 0;
+	z-index: -1;
+    filter: blur(3px);
+}
+
+#logo {
+    margin-left: 150px;
+}
+
+#content {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    height: 150px;
+    margin-top: 80px;
 }
 
-header p {
-    color: #EDF1F6;
-    font-family: 'Ubuntu', sans-serif;   
-    font-size: 24px;
-    text-transform: uppercase;
-
+#esquerda {
+    font-family: 'Ubuntu', sans-serif;
+    color: #FFFFFF;
+    margin-right: 180px;
 }
 
-.middle{
-    
-     background-repeat: no-repeat;
-     background-size: cover;
-     width: 100%;
-     height: 100vh;
-     width: 100vm;
-     width: 1333px;
-     height: 851px;
-     left: 0px;
-     top: 149px;
-     background: rgba(54, 64, 116, 0.32);
-    }
-
-#fotofundo {
-    
-   
-}
-
-
-
-.AnuncioLive{
+.anuncio {
     display: flex;
+    flex-direction: column;
     justify-content: center;
     align-items: center;
-    position: absolute;
-    width: 584px;
-    height: 136px;
-    left: 152px;
-    top: 240px;
     background: #3AABB9;
     border-radius: 20px;
-
+    padding: 32px 24px;
+    max-width: 584px;
 }
 
-.TextoAnuncioLive{  
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 35px;
-    text-transform: uppercase;
-    display: flex;
-    align-items: center;
-    text-align: center;
-    color: #FFFFFF;
-}
-
-.TextoEsquerda {
-    position: absolute;
-    width: 436px;
-    height: 26px;
-    left: 152px;
-    top: 540px;
-    font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
+.anuncio p {  
     font-size: 24px;
     display: flex;
     align-items: center;
-    color: #FFFFFF;
+}
+
+.anuncio p:nth-child(1) {
+    text-align: center;
+    font-size: 30px;
+    text-transform: uppercase;
+}
+
+.anuncio p:nth-child(2) {
+    margin: 55px 0;
+}
+
+#esquerda ul li {
+    font-size: 20px;
+    margin: 32px 0;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
-.TextoEsquerda2{
-    position: absolute;
-    width: 584px;
-    height: 120px;
-    left: 152px;
-    top: 650px;
-    font-family:'Ubuntu', sans-serif;
-    font-weight: bold;
-    font-size: 36px;
-    color: #FFFFFF;
-    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
-}
-
-.ImagemCarta{
-    position: absolute;
-    width: 300px;
-    height: 231px;
-    left: 940px;
-    top: 209px;
-}
-
-.Formulario {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    position: absolute;
-    width: 400px;
-    height: 502px;
-    left: 915px;
-    top: 376px;
+.formulario {
     background: #FFFFFF;
     border-radius: 12px;
+    padding: 40px;
+    position: relative;
+    max-width: 432px;
 }
 
-.TextoFormulario {
+.formulario img {
+    width: 300px;
     position: absolute;
-    top: 64px;
+    top: -169px;
+    left: 60px;
+}
+
+
+.formulario p {
     font-family: 'Roboto', sans-serif;   
     font-weight: bold;
     font-size: 24px;
-    display: flex;
-    align-items: center;
     text-align: center;
-    font-variant: small-caps;
     color: #000000;
-    
+    margin: 20px 0 40px;
+    text-transform: uppercase;
 }
+
+.formulario form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
 
 input[type=text]{
     width: 351px;
@@ -178,7 +197,8 @@ input[type=email]{
     box-sizing: border-box;
     border-radius: 40px;
     outline: none;
-    }
+    margin: 15px 0;
+}
 
 input[value]{
     padding:30px;
@@ -196,7 +216,8 @@ input[value]{
     height: 75px;  
     background: #3AABB9;
     border-radius: 40px;  
-    outline: none;  
+    border: 0;
+    cursor: pointer;
 }
 
 .textobotao{
@@ -208,26 +229,98 @@ input[value]{
     text-transform: uppercase;
 }
 
-.FormFinal{
-    margin-top:150px ;
+#convidados {
+    background: #E4E4E4;
+    padding-top: 64px;   
+    padding-bottom: 48px;
 }
 
-.convidados{
-    width: 100%;
-    height: 1000px;
-    background: #ffffff;
-    
-}
-section h3{
-    position: absolute;
-    display: flex;
-    align-items: center;
-    text-align: center;
+#convidados p {
     font-family: 'Ubuntu', sans-serif;
     font-weight: bold;
-    font-size: 36px;
-    margin-left: 23px;
-    text-transform: uppercase;
+    font-size: 24px;
     color: #505050;
 }
 
+#convidados > p:nth-last-child(1) {
+    margin-top: 48px;
+}
+
+.conheca {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 64px 0 48px;
+}
+
+.conheca span {
+    border: 2px solid #3AABB9;
+    flex: 1;
+}
+
+.conheca h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 36px;
+    text-transform: uppercase;
+    color: #505050;
+    margin: 0 20px;
+}
+
+.perfis {
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 164px;
+}
+
+.perfil {
+	font-family: 'Ubuntu', sans-serif;
+	font-weight: bold;
+	color: #505050;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.perfikl img {
+    width: 220px;
+    height: 220px;
+}
+
+.perfil h4 {
+    font-size: 24px;
+    margin-top: 34px;
+}
+
+.perfil p {
+    font-size: 18px;
+}
+
+#convidados a {
+    background: #3AABB9;
+    border-radius: 40px;
+    width: 432px;
+    padding: 20px 0;
+    display: block;
+    margin: 0 auto;
+    text-align: center;
+    color: #101E42;
+    text-transform: uppercase;
+    text-decoration: none;
+    font-family: 'Roboto', sans-serif;
+    font-size: 18px;
+    font-weight: bold;
+}
+
+footer {
+	background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #0D62A7;
+	height: 100px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+footer a:nth-child(2) {
+    margin: 0 64px;
+}
