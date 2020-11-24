@@ -252,20 +252,19 @@ button:active, button:focus{
 }
 
 
-#convidados {
+.convidados {
     background: #E4E4E4;
     padding-top: 64px;   
     padding-bottom: 48px;
 }
 
-#convidados p {
+.convidados p {
     font-family: 'Ubuntu', sans-serif;
-    font-weight: bold;
     font-size: 24px;
     color: #505050;
 }
 
-#convidados > p:nth-last-child(1) {
+.convidados > p:nth-last-child(1) {
     margin-top: 48px;
 }
 
@@ -323,8 +322,8 @@ button:active, button:focus{
 }
 
 .perfil h5{
-    width: 233px;
-    height: 201px;
+    /* width: 233px;
+    height: 201px; */
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -349,17 +348,17 @@ button:active, button:focus{
     padding-top: 10px;
 }
 
-#convidados a {
+.convidados a {
     font-weight: bold;
     text-decoration: none;
     color: inherit;
 }
 
-#convidados a:hover {
+.convidados a:hover {
     text-decoration: underline;
 }
 
-#convidados button {
+.convidados button {
     background: #3AABB9;
     border-radius: 40px;
     width: 432px;
@@ -404,7 +403,7 @@ footer div {
 	justify-content: space-between;
 }
 
-#convidados button:hover{
+.convidados button:hover{
     color:#eff0f3;
     background: #1e8f9e;
     transition: all 0.3s ease-in-out;
@@ -471,12 +470,21 @@ color: #505050;
 @media screen and (max-width: 767px) {
     header {
         flex-direction: column;
+        padding: 24px 34px;
+        height: 200px;
     }
 
     header p {
-        /* margin: 0; */
+        margin: 0;
         text-align: center;
-        margin-bottom: 10px;
+        margin-bottom: 15px;
+        font-size: 22px;
+    }
+
+    .horario {
+        width: 60px;
+        height: 60px;
+        font-size: 36px;
     }
 
     section {
@@ -484,8 +492,8 @@ color: #505050;
     }
 
     #top {
-        padding-top: 20px;
-        margin-top: 141px;
+        padding-top: 40px;
+        margin-top: 200px;
     }
 
     #logo {
@@ -495,6 +503,7 @@ color: #505050;
     #logo img {
         display: block;
         margin: 0 auto;
+        max-width: 180px;
     }
 
     #content {
@@ -506,9 +515,23 @@ color: #505050;
         margin-right: 0;
     }
 
+    #esquerda ul li {
+        font-size: 18px;
+        text-align: center;
+        list-style: none;
+        margin: 25px auto;
+    }
+
     .formulario {
         margin-top: 100px;
-        max-width: 100%;
+        width: 100%;
+        padding: 50px 30px 30px 30px;
+    }
+    
+    .formulario p {
+        font-size: 18px;
+        max-width: 246px;
+        margin: 5px auto 23px;
     }
 
     .formulario img {
@@ -516,20 +539,101 @@ color: #505050;
         top: -112px;
     }
 
+    .formulario input, .botao {
+        height: 44px;
+    }
+
+    .formulario label {
+        margin-left: 20px;
+    }
+
+    .botao {
+        font-size: 14px;
+    }
+
+    .conheca {
+        flex-direction: column;
+        align-items: initial;
+        margin: 26px 0;
+    }
+
+    .conheca span:nth-last-child(1) {
+        display: none;
+    }
+
+    .conheca h3 {
+        font-size: 22px;
+        margin: 30px 0 0 0;
+        text-align: center;
+    }
+
     .perfis {
         flex-direction: column;
         margin-bottom: 0;
     }
 
-    #convidados a {
+    .perfil {
+        margin-bottom: 40px;
+    }
+
+    .perfil h4 {
+        font-size: 20px;
+    }
+
+    .perfil p {
+        font-size: 18px;
+    }
+
+    .perfil h5 {
+        text-align: center;
+    }
+
+    .convidados {
+        padding-top: 40px;
+    }
+
+    .convidados p {
+        font-size: 18px;
+        text-align: center;
+    }
+
+    .convidados a {
         width: 100%;
+    }
+
+    .convidados button {
+        width: 100%;
+        font-size: 14px;
+        height: 44px;
+        padding: 0;
+    }
+
+    footer {
+        padding: 0 60px;
     }
 
     footer a {
         margin: 0;
     }
 
+    footer img {
+        height: 29px;
+        width: 29px;
+    }
+
     .EspaçoImagem img {
         width: 100%;
+    }
+
+    .descricaoNextlevel {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .descricaoNextlevel p {
+        font-size: 18px;
+        text-align: center;
+        padding: 23px 0 0 0;
+        font-weight: normal;
     }
 }
