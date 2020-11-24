@@ -220,6 +220,14 @@ input[value]{
     cursor: pointer;
 }
 
+.botao:hover{
+    color:#eff0f3;
+    background: #1e8f9e;
+    transition: all 0.3s ease-in-out;
+    
+    }
+
+    
 .textobotao{
     font-family: 'Roboto', sans-serif; 
     font-weight: bold;
@@ -280,7 +288,7 @@ input[value]{
 	display: flex;
 	flex-direction: column;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
 }
 
 .perfikl img {
@@ -294,7 +302,21 @@ input[value]{
 }
 
 .perfil p {
-    font-size: 18px;
+    /* font-size: 18px; Esta fonte está anulada pela TAG #convidados p */
+    margin-top: 5px;
+}
+
+.perfil h5{
+    width: 280px;
+    height: 201px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 16px;
+    line-height: 110%;
+    /* or 18px */
+    color: #505050;
+    padding-top: 20px;
 }
 
 #convidados a {
@@ -321,6 +343,12 @@ footer {
 	align-items: center;
 }
 
-footer a:nth-child(2) {
+footer a:nth-child(-n+4) {
     margin: 0 64px;
+}
+
+#convidados a:hover{
+    color:#eff0f3;
+    background: #1e8f9e;
+    transition: all 0.3s ease-in-out;
 }
