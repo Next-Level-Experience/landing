@@ -41,7 +41,7 @@ window._show_thank_you = function(id, message, trackcmp_url, email) {
     // _load_script(trackcmp_url);
     // }
     // if (typeof window._form_callback !== 'undefined') window._form_callback(id);
-    location.href = '/index2.html'
+    location.href = '/agradecimento-live.html'
 };
 window._show_error = function(id, message, html) {
     var form = document.getElementById('_form_' + id + '_'), err = document.createElement('div'), button = form.querySelector('button'), old_error = form.querySelector('._form_error');
