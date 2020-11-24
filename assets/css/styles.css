@@ -339,7 +339,7 @@ footer {
 	height: 100px;
 	display: flex;
 	justify-content: center;
-	align-items: center;
+    align-items: center;
 }
 
 footer div {
@@ -414,4 +414,57 @@ footer div {
     footer a {
         margin: 0;
     }
+.confirmação{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 76px;
+    padding-bottom: 64px;
+}
+
+.confirmação h2 {
+font-family: 'Ubuntu', sans-serif;
+font-style: normal;
+font-weight: bold;
+font-size: 48px;
+text-transform: uppercase;
+color: #505050;
+}
+
+.EspaçoImagem {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.textoFinal{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 34px;
+    margin-bottom: 145px;
+}
+.textoFinal h3{
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: bold;
+    font-size: 30px;
+    color: #505050;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+.ultimaLinha{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 8px;
+}
+
+.ultimaLinha p{
+    font-family: 'Roboto', sans-serif;
+    color: #000000;
+    text-transform: uppercase;
+}
 }
