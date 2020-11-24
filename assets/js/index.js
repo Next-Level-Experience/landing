@@ -19,6 +19,10 @@ window.onload = () => {
 
 }
 
+document.getElementById('goToTop').addEventListener('click', () => {
+    zenscroll.toY(0)
+})
+
 // Active campaign
 
 window.cfields = [];
