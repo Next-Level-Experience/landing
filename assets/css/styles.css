@@ -69,7 +69,7 @@ section {
     min-height: 100%;
     width: 100%;
     background: rgba(54, 64, 116, 0.32);
-    padding: 0 150px;
+    padding: 0 120px;
 }
 
 #top {
@@ -95,7 +95,8 @@ section {
 }
 
 #logo {
-    margin-left: 150px;
+    margin-left: 120px;
+
 }
 
 #content {
@@ -140,14 +141,14 @@ section {
 
 #esquerda ul li {
     font-size: 20px;
-    margin: 32px 0;
+    margin: 32px 20px;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.7);
 }
 
 .formulario {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 40px;
+    padding: 80px 40px 40px 40px;
     position: relative;
     max-width: 432px;
 }
@@ -165,11 +166,12 @@ section {
 
 .formulario p {
     font-family: 'Roboto', sans-serif;   
-    font-weight: bold;
+    font-weight: 500;
     font-size: 24px;
+    line-height: 130%;
     text-align: center;
-    color: #000000;
-    margin: 20px 0 40px;
+    color: #3AABB9;;
+    margin: 5px 0 40px;
     text-transform: uppercase;
 }
 
@@ -198,6 +200,7 @@ section {
     height: 75px;
     border: 1px solid #233E84;
     border-radius: 40px;
+    outline: 0;
 }
 
 input[type=email]{
@@ -225,16 +228,29 @@ input[value]{
     font-family: 'Roboto', sans-serif; 
     font-weight: bold;
     font-size: 18px;
-    color: #101E42;
+    color:#eff0f3;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
 }
 
-.botao:hover {
-    color:#eff0f3;
+button:hover {
+    color: #101E42;
     background: #1e8f9e;
     transition: all 0.3s ease-in-out;   
 }
+
+button:active, button:focus{
+    outline: 0;
+    border: none;
+    -moz-outline-style: none;
+}
+
+._error-inner {
+    font-family: 'Roboto', sans-serif; 
+    font-weight: bold;
+    padding-left: 10px;
+}
+
 
 #convidados {
     background: #E4E4E4;
@@ -277,11 +293,11 @@ input[value]{
 .perfis {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 100px;
+    margin-bottom: 30px;
 }
 
 .perfil {
-	font-family: 'Ubuntu', sans-serif;
+    font-family: 'Ubuntu', sans-serif;
 	font-weight: bold;
 	color: #505050;
 	display: flex;
@@ -290,7 +306,7 @@ input[value]{
     align-items: center;
 }
 
-.perfikl img {
+.perfil img {
     width: 220px;
     height: 220px;
 }
@@ -298,6 +314,7 @@ input[value]{
 .perfil h4 {
     font-size: 24px;
     margin-top: 34px;
+    color:#3AABB9;
 }
 
 .perfil p {
@@ -306,7 +323,7 @@ input[value]{
 }
 
 .perfil h5{
-    width: 280px;
+    width: 233px;
     height: 201px;
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
@@ -316,6 +333,20 @@ input[value]{
     /* or 18px */
     color: #505050;
     padding-top: 20px;
+    
+}
+
+.perfil h6{
+    width: 233px;
+    height: 20px;
+    font-family: 'Ubuntu', sans-serif;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 15px;
+    line-height: 110%;
+    color: #505050;   
+    text-align: center;
+    padding-top: 10px;
 }
 
 #convidados a {
@@ -346,6 +377,19 @@ input[value]{
     border: 0;
 }
 
+.descricaoNextlevel{
+    display: flex;
+    justify-content: center;
+    padding-top: 60px;
+}
+
+.descricaoNextlevel p{
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 24px;
+    color: #505050;
+    padding-left: 24px;
+}
 footer {
 	background: linear-gradient(180deg, rgba(255, 255, 255, 0.4) 0%, rgba(255, 255, 255, 0) 100%), #0D62A7;
 	height: 100px;
@@ -430,7 +474,7 @@ color: #505050;
     }
 
     header p {
-        margin: 0;
+        /* margin: 0; */
         text-align: center;
         margin-bottom: 10px;
     }
