@@ -159,6 +159,9 @@ section {
     left: 60px;
 }
 
+._form-content {
+    width: 100%;
+}
 
 .formulario p {
     font-family: 'Roboto', sans-serif;   
@@ -177,26 +180,27 @@ section {
     flex-direction: column;
 }
 
+.formulario label {
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    color: #233E84;
+    text-transform: uppercase;
+    margin-left: 35px;
+}
 
-input[type=text]{
-    width: 351px;
+._form_element:nth-child(2) {
+    margin: 10px 0 15px;
+}
+
+.formulario input {
+    padding-left: 35px;
+    width: 100%;
     height: 75px;
     border: 1px solid #233E84;
-    box-sizing: border-box;
     border-radius: 40px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    outline: none;
 }
 
 input[type=email]{
-    width: 351px;
-    height: 75px;
-    border: 1px solid #233E84;
-    box-sizing: border-box;
-    border-radius: 40px;
-    outline: none;
     margin: 15px 0;
 }
 
@@ -211,30 +215,25 @@ input[value]{
     color: #233E84;
 }
 
-.botao{
-    width: 351px;
+.botao {
+    width: 100%;
     height: 75px;  
     background: #3AABB9;
     border-radius: 40px;  
     border: 0;
     cursor: pointer;
-}
-
-.botao:hover{
-    color:#eff0f3;
-    background: #1e8f9e;
-    transition: all 0.3s ease-in-out;
-    
-    }
-
-    
-.textobotao{
     font-family: 'Roboto', sans-serif; 
     font-weight: bold;
     font-size: 18px;
     color: #101E42;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     text-transform: uppercase;
+}
+
+.botao:hover {
+    color:#eff0f3;
+    background: #1e8f9e;
+    transition: all 0.3s ease-in-out;   
 }
 
 #convidados {
@@ -278,7 +277,7 @@ input[value]{
 .perfis {
     display: flex;
     justify-content: space-between;
-    margin-bottom: 164px;
+    margin-bottom: 100px;
 }
 
 .perfil {
@@ -343,12 +342,76 @@ footer {
 	align-items: center;
 }
 
-footer a:nth-child(-n+4) {
-    margin: 0 64px;
+footer div {
+	width: 362px;
+	display: flex;
+	justify-content: space-between;
 }
 
 #convidados a:hover{
     color:#eff0f3;
     background: #1e8f9e;
     transition: all 0.3s ease-in-out;
+}
+
+@media screen and (max-width: 767px) {
+    header {
+        flex-direction: column;
+    }
+
+    header p {
+        margin: 0;
+        text-align: center;
+        margin-bottom: 10px;
+    }
+
+    section {
+        padding: 0 20px;
+    }
+
+    #top {
+        padding-top: 20px;
+        margin-top: 141px;
+    }
+
+    #logo {
+        margin: 0;
+    }
+
+    #logo img {
+        display: block;
+        margin: 0 auto;
+    }
+
+    #content {
+        margin-top: 40px;
+        flex-direction: column;
+    }
+
+    #esquerda {
+        margin-right: 0;
+    }
+
+    .formulario {
+        margin-top: 100px;
+        max-width: 100%;
+    }
+
+    .formulario img {
+        width: 200px;
+        top: -112px;
+    }
+
+    .perfis {
+        flex-direction: column;
+        margin-bottom: 0;
+    }
+
+    #convidados a {
+        width: 100%;
+    }
+
+    footer a {
+        margin: 0;
+    }
 }
