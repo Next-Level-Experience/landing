@@ -319,6 +319,16 @@ input[value]{
 }
 
 #convidados a {
+    font-weight: bold;
+    text-decoration: none;
+    color: inherit;
+}
+
+#convidados a:hover {
+    text-decoration: underline;
+}
+
+#convidados button {
     background: #3AABB9;
     border-radius: 40px;
     width: 432px;
@@ -332,6 +342,8 @@ input[value]{
     font-family: 'Roboto', sans-serif;
     font-size: 18px;
     font-weight: bold;
+    cursor: pointer;
+    border: 0;
 }
 
 footer {
@@ -348,7 +360,7 @@ footer div {
 	justify-content: space-between;
 }
 
-#convidados a:hover{
+#convidados button:hover{
     color:#eff0f3;
     background: #1e8f9e;
     transition: all 0.3s ease-in-out;
