@@ -572,6 +572,7 @@ color: #505050;
     .perfis {
         flex-direction: column;
         margin-bottom: 0;
+        align-items: center;
     }
 
     .perfil {
