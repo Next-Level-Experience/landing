@@ -148,7 +148,7 @@ section {
 .formulario {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 80px 40px 40px 40px;
+    padding: 50px 40px 40px 40px;
     position: relative;
     max-width: 432px;
 }
@@ -660,4 +660,49 @@ color: #505050;
         padding: 23px 0 0 0;
         font-weight: normal;
     }
+}
+
+/* pop-up */
+
+.popup h2{
+    color: #505050;
+    text-align: center;   
+    padding: 32px 133px 0px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.popup-inner{
+    display: flex;
+align-items: center;
+text-align: center;
+justify-content: space-around;
+padding:0 20px;
+}
+
+.wrapper .formulario {
+    background: #FFFFFF;
+    border-radius: 12px;
+  
+    position: relative;
+    max-width: 432px;
+}
+
+._form_element label{
+    padding-right: 160px;
+}
+
+._x68867163 label{
+    padding-right: 240px;
+}
+
+.popup-close {
+    background-color: #fff;
+    border-style: none;
+    
+}
+
+.popup-close img {
+    display: flex;
 }
