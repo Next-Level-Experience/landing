@@ -102,7 +102,7 @@ section {
 #content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 80px;
 }
 
@@ -470,8 +470,9 @@ color: #505050;
 }
 
 /* Popup */
+
 .wrapper {
-	position: absolute;
+	position: fixed;
 	top: 0;
 	bottom: 0;
 	left: 0;
@@ -483,10 +484,11 @@ color: #505050;
     align-items: center;
 }
 
-/* pop-up */
+.wrapper-open {
+    opacity: 1;
+}
 
 .popup {
-    border: 1px solid;
     background-color: #fff;
     width: 770px;
     height: 500px;
