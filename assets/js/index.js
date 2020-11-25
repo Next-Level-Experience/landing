@@ -11,17 +11,88 @@ window.onload = () => {
     
         const difference = (date - now)
     
-        days.innerText = Math.floor(difference / (1000 * 60 * 60 * 24))
-        hours.innerText = Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60))
-        minutes.innerText = Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60))
-        seconds.innerText = Math.floor((difference % (1000 * 60)) / 1000)
+        days.innerText = fixNum(Math.floor(difference / (1000 * 60 * 60 * 24)))
+        hours.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
+        minutes.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)))
+        seconds.innerText = fixNum(Math.floor((difference % (1000 * 60)) / 1000))
     }, 1000);
 
+}
+
+const fixNum = num => {
+    if (num < 10) {
+        return String('0' + num)
+    } else {
+        return num
+    }
 }
 
 document.getElementById('goToTop').addEventListener('click', () => {
     zenscroll.toY(0)
 })
+
+// Popup
+
+const body = document.querySelector('body')
+const wrapper = document.createElement('div')
+wrapper.classList.add('wrapper')
+const popup = document.createElement('div')
+popup.classList.add('popup')
+const h2 = document.createElement('h2')
+h2.innerText = 'Você não vai ficar de fora dessa né? Inscreva-se gratuitamente!'
+popup.appendChild(h2)
+const inner = document.createElement('div')
+inner.classList.add('popup-inner')
+const popupImg = document.createElement('img')
+popupImg.src = './assets/images/popup.svg'
+inner.appendChild(popupImg)
+const popupForm = document.createElement('div')
+popupForm.classList.add('formulario')
+popupForm.innerHTML = `
+                <form method="POST" action="https://nextlevelxp1.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark" novalidate>
+                <input type="hidden" name="u" value="1" />
+                <input type="hidden" name="f" value="1" />
+                <input type="hidden" name="s" />
+                <input type="hidden" name="c" value="0" />
+                <input type="hidden" name="m" value="0" />
+                <input type="hidden" name="act" value="sub" />
+                <input type="hidden" name="v" value="2" />
+                <div class="_form-content">
+                <div class="_form_element _x53025867 _full_width " >
+                    <label class="_form-label">
+                    Nome completo
+                    </label>
+                    <div class="_field-wrapper">
+                    <input type="text" name="fullname" placeholder="Digite seu nome" />
+                    </div>
+                </div>
+                <div class="_form_element _x68867163 _full_width " >
+                    <label class="_form-label">
+                    E-mail
+                    </label>
+                    <div class="_field-wrapper">
+                    <input type="text" name="email" placeholder="Digite seu e-mail" required/>
+                    </div>
+                </div>
+                <div class="_button-wrapper _full_width">
+                    <button id="_form_1_submit" class="_submit botao" type="submit">
+                    INSCREVER-SE GRATUITAMENTE
+                    </button>
+                </div>
+                <div class="_clear-element">
+                </div>
+                </div>
+                <div class="_form-thank-you" style="display:none;">
+                </div>
+                </form>`
+inner.appendChild(popupForm)
+popup.appendChild(inner)
+const closeButton = document.createElement('button')
+closeButton.classList.add('popup-close')
+closeButton.innerHTML = '<img src="./assets/images/close.svg" />'
+popup.appendChild(closeButton)
+wrapper.appendChild(popup)
+body.appendChild(wrapper)
 
 // Active campaign
 

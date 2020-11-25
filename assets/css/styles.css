@@ -469,6 +469,27 @@ color: #505050;
     text-transform: uppercase;
 }
 
+/* Popup */
+.wrapper {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.4);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.popup {
+    border: 1px solid;
+    background-color: #fff;
+    width: 770px;
+    height: 500px;
+}
+
 @media screen and (max-width: 767px) {
     header {
         flex-direction: column;
