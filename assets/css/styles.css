@@ -102,7 +102,7 @@ section {
 #content {
     display: flex;
     justify-content: space-between;
-    align-items: center;
+    align-items: flex-start;
     margin-top: 80px;
 }
 
@@ -148,7 +148,7 @@ section {
 .formulario {
     background: #FFFFFF;
     border-radius: 12px;
-    padding: 80px 40px 40px 40px;
+    padding: 50px 40px 40px 40px;
     position: relative;
     max-width: 432px;
 }
@@ -233,13 +233,13 @@ input[value]{
     text-transform: uppercase;
 }
 
-button:hover {
+.botao:hover {
     color: #101E42;
     background: #1e8f9e;
     transition: all 0.3s ease-in-out;   
 }
 
-button:active, button:focus{
+.botao:active, .otao:focus{
     outline: 0;
     border: none;
     -moz-outline-style: none;
@@ -467,6 +467,78 @@ color: #505050;
     font-family: 'Roboto', sans-serif;
     color: #000000;
     text-transform: uppercase;
+}
+
+/* Popup */
+
+.wrapper {
+	position: fixed;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	background: rgba(0,0,0,.4);
+    z-index: 10;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.wrapper-open {
+    opacity: 1;
+}
+
+.popup {
+    background-color: #fff;
+    width: 770px;
+    height: 500px;
+    position: relative;
+}
+
+.popup h2{
+    color: #505050;
+    text-align: center;   
+    padding: 32px 133px 0px;
+    font-family: 'Ubuntu', sans-serif; 
+    font-weight: 500;
+    font-size: 30px;
+}
+
+.popup-inner{
+    display: flex;
+    align-items: center;
+    text-align: center;
+    justify-content: space-around;
+    padding:0 20px;
+}
+
+.wrapper .formulario {
+    background: #FFFFFF;
+    border-radius: 12px;
+  
+    position: relative;
+    max-width: 432px;
+}
+
+._form_element label{
+    padding-right: 160px;
+}
+
+._x68867163 label{
+    padding-right: 240px;
+}
+
+.popup-close {
+    background-color: transparent;
+    border: none;
+    position: absolute;
+    top: 40px;
+    right: 40px;
+    cursor: pointer;
+}
+
+.popup-close img {
+    display: flex;
 }
 
 @media screen and (max-width: 767px) {
