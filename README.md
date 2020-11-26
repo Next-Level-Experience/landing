@@ -1,4 +1,4 @@
-# Next Level Experience
+# ▶️ Next Level Experience
 
 O Next Level Experience é um projeto fictício sem fins lucrativos que visa entregar conteúdos atuais para profissionais que buscam alta performance.
 
