@@ -19,12 +19,12 @@ window.onload = () => {
         seconds.innerText = fixNum(Math.floor((difference % (1000 * 60)) / 1000))
     }, 1000);
 
-    // setTimeout(() => {
-    //     document.querySelector('html').addEventListener('mouseleave', () => {
-    //         clearTimeout()
-    //         if (count < 1) createPopUp()
-    //     })
-    // }, 10000);
+    setTimeout(() => {
+        document.querySelector('html').addEventListener('mouseleave', () => {
+            clearTimeout()
+            if (count < 1) createPopUp()
+        })
+    }, 10000);
 
 }
 
