@@ -7,17 +7,7 @@ let count = 0
 
 window.onload = () => {
 
-    setInterval(() => {
-        const date = new Date('Nov 26 2020 20:00').getTime()
-        const now = new Date().getTime()
-    
-        const difference = (date - now)
-    
-        days.innerText = fixNum(Math.floor(difference / (1000 * 60 * 60 * 24)))
-        hours.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
-        minutes.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)))
-        seconds.innerText = fixNum(Math.floor((difference % (1000 * 60)) / 1000))
-    }, 1000);
+    setTimer()
 
     setTimeout(() => {
         document.querySelector('html').addEventListener('mouseleave', () => {
@@ -27,6 +17,33 @@ window.onload = () => {
     }, 10000);
 
 }
+
+const setTimer = setInterval(() => {
+
+    const eventDate = new Date('Nov 26 2020 20:00').getTime()
+    const postEvent = new Date('Nov 26 2020 21:00').getTime()
+    let now = new Date().getTime()
+
+    const difference = (eventDate - now)
+
+    if (difference >= 0) {
+        days.innerText = fixNum(Math.floor(difference / (1000 * 60 * 60 * 24)))
+        hours.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)))
+        minutes.innerText = fixNum(Math.floor((difference % (1000 * 60 * 60)) / (1000 * 60)))
+        seconds.innerText = fixNum(Math.floor((difference % (1000 * 60)) / 1000))
+    } else {
+        const headerText = document.querySelector('header p')
+        const clockArea = document.querySelector('#relogio')
+        if (postEvent - now <= 0) {
+            clearInterval(setTimer)
+            headerText.innerText = 'A live já terminou!'
+        } else {
+            headerText.innerText = 'A live já começou!'
+        }
+        clockArea.innerHTML = `<a href="https://youtu.be/fEu-9BVdGd0" target="_blank" rel="noopener">Clique aqui para assistir</a>`
+    }
+
+}, 1000);
 
 const fixNum = num => {
     if (num < 10) {
