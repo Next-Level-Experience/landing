@@ -8,7 +8,7 @@ let count = 0
 window.onload = () => {
 
     setInterval(() => {
-        const date = new Date('Nov 26 2020 20:30').getTime()
+        const date = new Date('Nov 26 2020 20:00').getTime()
         const now = new Date().getTime()
     
         const difference = (date - now)
