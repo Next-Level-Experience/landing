@@ -274,7 +274,7 @@ input[value]{
 
 
 .convidados {
-    background: #E4E4E4;
+    background: #fff;
     padding-top: 64px;   
     padding-bottom: 48px;
 }
@@ -307,7 +307,7 @@ input[value]{
     font-size: 36px;
     text-transform: uppercase;
     color: #505050;
-    margin: 0 20px;
+    margin: 0 50px;
 }
 
 .perfis {
@@ -340,19 +340,15 @@ input[value]{
 }
 
 .perfil p {
-    /* font-size: 18px; Esta fonte está anulada pela TAG #convidados p */
     margin-top: 5px;
 }
 
 .perfil h5{
-    /* width: 233px;
-    height: 201px; */
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;
     font-size: 16px;
     line-height: 110%;
-    /* or 18px */
     color: #505050;
     padding-top: 20px;
     
@@ -412,6 +408,57 @@ input[value]{
     color: #505050;
     padding-left: 24px;
 }
+
+.parceiros {
+    display: flex;
+    justify-content: space-around;
+    align-items: flex-end;
+    margin-bottom: 74px;
+}
+
+.parceiro {
+    max-width: 284px;
+}
+
+.parceiro .logo {
+	width: 230px;
+	height: 230px;
+	margin: 0 auto 6px;
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+.parceiro img {
+    width: 100%;
+}
+
+.parceiro h3 {
+    font-family: 'Ubuntu', sans-serif;
+    font-weight: bold;
+    font-size: 18px;
+    text-align: center;
+    color: #3AABB9;
+    margin-bottom: 32px;
+}
+
+.parceiro p {
+    font-size: 16px;
+    margin-bottom: 24px;
+}
+
+.parceiro a {
+	color: #fff;
+	text-decoration: none;
+	width: 160px;
+	height: 50px;
+	display: flex;
+	justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    text-transform: lowercase;
+}
+
 footer {
 	background: #0D62A7;
 	height: 100px;
@@ -528,25 +575,12 @@ color: #505050;
 .popup-inner{
     display: flex;
     align-items: center;
-    text-align: center;
     justify-content: space-around;
     padding:0 20px;
 }
 
 .wrapper .formulario {
-    background: #FFFFFF;
-    border-radius: 12px;
-  
-    position: relative;
-    max-width: 432px;
-}
-
-._form_element label{
-    padding-right: 160px;
-}
-
-._x68867163 label{
-    padding-right: 240px;
+    width: 432px;
 }
 
 .popup-close {
@@ -751,6 +785,15 @@ color: #505050;
         font-size: 14px;
         height: 44px;
         padding: 0;
+    }
+
+    .parceiros {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .parceiros p {
+        font-size: 16px;
     }
 
     footer {
