@@ -59,7 +59,7 @@ const createPopUp = () => {
     const popupForm = document.createElement('div')
     popupForm.classList.add('formulario')
     popupForm.innerHTML = `
-                    <form method="POST" action="https://nextlevelxp1.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark" novalidate>
+                    <form method="POST" action="https://nextlevelxp1.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark">
                     <input type="hidden" name="u" value="1" />
                     <input type="hidden" name="f" value="1" />
                     <input type="hidden" name="s" />
