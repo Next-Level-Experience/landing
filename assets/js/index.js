@@ -20,7 +20,7 @@ window.onload = () => {
     }, 1000);
 
     setTimeout(() => {
-        document.querySelector('html').addEventListener('mouseleave', () => {
+        document.addEventListener('mouseleave', () => {
             clearTimeout()
             if (count < 1) createPopUp()
         })
