@@ -7,7 +7,7 @@ let count = 0
 
 window.onload = () => {
 
-    setTimer()
+    () => setTimer()
 
     setTimeout(() => {
         document.querySelector('html').addEventListener('mouseleave', () => {
