@@ -13,7 +13,7 @@ let secs = 50 /* Edite esse valor para determinar os segundos iniciais  */
 
 window.onload = () => {
 
-    setTimer()
+    () => setTimer()
 
     setTimeout(() => {
         document.querySelector('html').addEventListener('mouseleave', () => {
@@ -80,34 +80,28 @@ const createPopUp = () => {
     const inner = document.createElement('div')
     inner.classList.add('popup-inner')
     const popupImg = document.createElement('img')
-    popupImg.src = './assets/images/popup.svg'
+    popupImg.src = '../assets/images/popup.svg'
     inner.appendChild(popupImg)
     const popupForm = document.createElement('div')
     popupForm.classList.add('formulario')
     popupForm.innerHTML = `
-                    <form method="POST" action="https://nextlevelxp1.activehosted.com/proc.php" id="_form_1_" class="_form _form_1 _inline-form  _dark">
-                    <input type="hidden" name="u" value="1" />
-                    <input type="hidden" name="f" value="1" />
-                    <input type="hidden" name="s" />
-                    <input type="hidden" name="c" value="0" />
-                    <input type="hidden" name="m" value="0" />
-                    <input type="hidden" name="act" value="sub" />
-                    <input type="hidden" name="v" value="2" />
+                    <!-- Esse formulário em específico não funciona -->
+                    <form>
                     <div class="_form-content">
                     <div class="_form_element _x53025867 _full_width " >
-                        <label class="_form-label">
+                        <label class="_form-label" for="name_field">
                         Nome completo
                         </label>
                         <div class="_field-wrapper">
-                        <input type="text" name="fullname" placeholder="Digite seu nome" />
+                        <input type="text" name="fullname" id="name_field" />
                         </div>
                     </div>
                     <div class="_form_element _x68867163 _full_width " >
-                        <label class="_form-label">
+                        <label class="_form-label" for="email_field">
                         E-mail
                         </label>
                         <div class="_field-wrapper">
-                        <input type="text" name="email" placeholder="Digite seu e-mail" required/>
+                        <input type="text" name="email" id="email_field" required/>
                         </div>
                     </div>
                     <div class="_button-wrapper _full_width">
@@ -120,12 +114,12 @@ const createPopUp = () => {
                     </div>
                     <div class="_form-thank-you" style="display:none;">
                     </div>
-                    </form>`
+                </form>`
     inner.appendChild(popupForm)
     popup.appendChild(inner)
     const closeButton = document.createElement('button')
     closeButton.classList.add('popup-close')
-    closeButton.innerHTML = '<img src="./assets/images/close.svg" />'
+    closeButton.innerHTML = '<img src="../assets/images/close.svg" />'
     popup.appendChild(closeButton)
     wrapper.appendChild(popup)
     body.appendChild(wrapper)
