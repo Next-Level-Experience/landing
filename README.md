@@ -34,7 +34,12 @@ O projeto está disponível [aqui](https://nextlevelexperience.com.br/). Você t
 
 Para rodar localmente, clone o repositório e abra o arquivo index.html no seu navegador (preferencialmente usando o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
 
+## Mas eu queria ver o relógio funcionando! ⏲️
+
+Calma! Você pode acessar a página e o código JS da pasta `pre` que já estão preparados para que você possa simular o funcionamento da contagem regressiva. Nessa pasta a página abrirá segundos antes do contador zerar, mas você pode alterar as datas em `pre/index.js` e ver o relógio funcionando a todo vapor! Experimente!
+
 ## Contribua
+
 Sinta-se livre para enviar sua contribuição. 🤝
 
 Faça um fork do repositório, crie uma branch com as suas alterações e envie seu pull request. Você também pode abrir uma issue para discutir alterações mais amplas.
