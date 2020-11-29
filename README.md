@@ -26,7 +26,6 @@ Composta por 11 membros divididos em 4 stacks:
 - [Carol Vieira](https://www.linkedin.com/in/anacarolinavieira)
 - [Letícia Ferreira](https://www.linkedin.com/in/let%C3%ADcia-silva-ferreira)
 - [Luiza Quinet](https://www.linkedin.com/in/luizaquinet)
-- Samanta Lima
 
 ## Visualize o projeto
 
