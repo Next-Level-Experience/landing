@@ -31,7 +31,7 @@ Composta por 11 membros divididos em 4 stacks:
 
 O projeto está disponível [aqui](https://nextlevelexperience.com.br/). Você também pode conferir a gravação da live [aqui](https://www.youtube.com/watch?v=fEu-9BVdGd0).
 
-Para rodar localmente, clone o repositório e abra o arquivo index.html no seu navegador (preferencialmente usando o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer).
+Para rodar localmente, clone o repositório e abra o arquivo index.html no seu navegador (preferencialmente usando o [Live Server](https://marketplace.visualstudio.com/items?itemName=ritwickdey.LiveServer)).
 
 ## Mas eu queria ver o relógio funcionando! ⏲️
 
